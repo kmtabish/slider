@@ -35,7 +35,18 @@ ReactDOM.render(
     </div>
     <div style={wrapperStyle}>
       <p>Range with custom handle</p>
-      <Range min={0} max={20} defaultValue={[3, 10]} tipFormatter={value => `${value}%`} />
+      <Range min={0} max={1} step={0.001} defaultValue={[0.3, 0.5]} handle={handle} 
+      trackStyle={[{ backgroundColor: '#a1c45a', height: 10 },{ backgroundColor: '#a3a7e4', height: 10 } ]}
+      handleStyle={{
+        height: 28,
+        width: 28,
+        marginLeft: -14,
+        marginTop: -9,
+        backgroundColor: '#f9499e',
+      }}
+      railStyle={{ backgroundColor: '#f1c550', height: 10 }}
+      minimumTrackStyle={{ backgroundColor: '#a1c45a', height: 10 }}
+      maximumTrackStyle={{ backgroundColor: '#a1c45a', height: 10 }}/>
     </div>
   </div>,
   document.getElementById('__react-content')
