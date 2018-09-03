@@ -372,7 +372,7 @@ class Range extends React.Component {
           vertical={vertical}
           included={included}
           offset={offsets[i - 1]}
-          length={offsets[i] - offsets[i - 1]}
+          length={offsets[i]-offsets[i - 1]}
           style={trackStyle[index]}
           key={i}
         />
