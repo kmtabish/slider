@@ -365,7 +365,7 @@ class Range extends React.Component {
         [`${prefixCls}-track`]: true,
         [`${prefixCls}-track-${i}`]: true,
       });
-      console.log(offsets[i] - offsets[i - 1], offsets[i - 1])
+      // console.log(offsets[i] - offsets[i - 1], offsets[i - 1])
       return (
         <Track
           className={trackClassName}
