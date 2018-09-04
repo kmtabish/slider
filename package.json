@@ -21,6 +21,7 @@
   "files": [
     "assets/*.css",
     "lib",
+    "src",
     "es",
     "dist"
   ],
