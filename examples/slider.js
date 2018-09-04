@@ -1,9 +1,9 @@
 /* eslint react/no-multi-comp: 0, max-len: 0 */
-import 'rc-slider/assets/index.less';
+import 'kmt-rc-slider/assets/index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider, { createSliderWithTooltip } from 'rc-slider';
+import Slider, { createSliderWithTooltip } from 'kmt-rc-slider';
 
 const style = { width: 600, margin: 50 };
 

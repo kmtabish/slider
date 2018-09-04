@@ -1,8 +1,8 @@
-import 'rc-slider/assets/index.less';
+import 'kmt-rc-slider/assets/index.less';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider from 'rc-slider';
+import Slider from 'kmt-rc-slider';
 
 const style = { width: 400, margin: 50 };
 const marks = {

@@ -218,6 +218,7 @@ class Range extends React.Component {
     //   console.log(nextBounds, nextBounds.indexOf(value))
     //   nextHandle = nextBounds.indexOf(value);
     // }
+    
     console.log(nextBounds, nextBounds.indexOf(value))
     this.onChange({
       handle: nextHandle,
@@ -365,15 +366,15 @@ class Range extends React.Component {
         [`${prefixCls}-track`]: true,
         [`${prefixCls}-track-${i}`]: true,
       });
-      // console.log(offsets[i] - offsets[i - 1], offsets[i - 1])
+      console.log(offsets[i] - offsets[i - 1], offsets[i - 1], bounds)
       return (
         <Track
           className={trackClassName}
           vertical={vertical}
           included={included}
-          offset={offsets[i - 1]}
-          length={offsets[i]-offsets[i - 1]}
-          style={trackStyle[index]}
+          offset={bounds[0] > bounds[1] ? offsets[i] : offsets[i-1]}
+          length={bounds[0] > bounds[1] ? offsets[i-1]-offsets[i] : offsets[i]-offsets[i-1]}
+          style={bounds[0] > bounds[1] ? trackStyle[index] : trackStyle[index+1]}
           key={i}
         />
       );
