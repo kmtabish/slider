@@ -1,7 +1,7 @@
-# rc-slider
+# kmt-rc-slider
 ---
 
-Slider UI component for React
+Slider UI component for React, Its wrapper on rc-slider.
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -41,7 +41,7 @@ Slider UI component for React
 ## Install
 
 ```bash
-npm install --save rc-slider
+npm install --save kmt-rc-slider
 ```
 
 [![rc-slider](https://nodei.co/npm/rc-slider.png)](https://npmjs.org/package/rc-slider)
@@ -51,11 +51,11 @@ npm install --save rc-slider
 ````js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider, { Range } from 'rc-slider';
+import Slider, { Range } from 'kmt-rc-slider';
 // We can just import Slider or Range to reduce bundle size
 // import Slider from 'rc-slider/lib/Slider';
 // import Range from 'rc-slider/lib/Range';
-import 'rc-slider/assets/index.css';
+import 'kmt-rc-slider/assets/index.css';
 
 ReactDOM.render(
   <div>
@@ -73,7 +73,7 @@ ReactDOM.render(
 An extension to make Slider or Range support Tooltip on handle.
 
 ```jsx
-const Slider = require('rc-slider');
+const Slider = require('kmt-rc-slider');
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 ```
