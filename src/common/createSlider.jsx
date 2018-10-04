@@ -143,7 +143,7 @@ export default function createSlider(Component) {
 
     onBlur = (e) => {
       const { onBlur } = this.props;
-      this.onEnd(e);
+      //this.onEnd(e);          // commented by KMT to the crunchy handler issue
       if (onBlur) {
         onBlur(e);
       }
