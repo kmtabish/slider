@@ -34,10 +34,10 @@ export default function createSliderWithTooltip(Component) {
         tipFormatter,
         tipProps,
         handleStyle,
+        dynamicCls     //added this by KMT for dynamic class handling
       } = this.props;
-
       const {
-        prefixCls = 'rc-slider-tooltip',
+        prefixCls = dynamicCls +" " +'rc-slider-tooltip',  //added this by KMT for dynamic class handling
         overlay = tipFormatter(value),
         placement = 'top',
         visible = visible || false,
